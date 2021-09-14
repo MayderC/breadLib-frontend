@@ -1,0 +1,37 @@
+
+.footer
+  position: fixed
+  width: 100%
+  height: 80px
+  bottom: 0
+  display: flex
+
+
+.space__footer
+  height: 80px
+  position: relative
+  bottom: 0
+
+.footer__item
+  width: 33%
+  height: 80px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+
+.footer__item > img
+  max-height: 40%
+
+.no-select 
+  -webkit-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+
+@media (max-width: $movil-large)
+  .footer
+    position: sticky
+
+

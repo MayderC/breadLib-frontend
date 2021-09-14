@@ -1,26 +1,22 @@
-<template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+<template lang="pug">
+b-navbar
+router-view
+b-footer
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import BNavbar from './components/BNavbar.vue'
+import BHome from './views/BHome.vue'
+import BFooter from './components/BFooter.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BHome,
+    BNavbar,
+    BFooter
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style lang="sass" src="./assets/sass/variables.sass"></style>
+<style lang="sass" src="./assets/sass/main.sass"></style>

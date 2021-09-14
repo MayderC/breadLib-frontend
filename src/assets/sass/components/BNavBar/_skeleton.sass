@@ -1,0 +1,78 @@
+@import '../../variables'
+
+.nav__ghost
+  height: 80px
+  width: 100%
+  position: relative
+  top: 0
+  z-index: -1
+
+.navbar
+  position: fixed
+  height: 80px
+  width: 100%
+  display: flex
+  justify-content: space-between
+
+
+.navbar__list
+  margin: 0
+  padding: 0
+
+.navbar__item
+  margin: 0 40px
+  height: 100%
+  
+.navbar__item--logo
+  display: flex
+  align-items: center
+
+.navbar__text
+  display: grid
+  place-items: center
+
+.navbar__img
+  width: 45px
+  height: 45px
+  margin-right: 20px
+  display: grid
+  place-items: center
+
+.navbar__btn
+  position: absolute
+
+
+  //481px — 768px: iPads, Tablets
+
+@media  (max-width:  $movil-large) 
+  .navbar
+    display: block
+    position: sticky
+    top: 0
+
+  .navbar__menu
+    margin: 0
+    transition: .4s
+    height: 300px
+    transform: translatex(-100%)
+    border-bottom-left-radius: 30px
+    border-bottom-right-radius: 30px
+
+
+  .navbar__btn
+    width: 45px
+    top: 15px
+    right: 20px
+    transition: .2s
+
+
+  .rotate-btn
+    transform: rotate(30deg)
+    transition: .2s
+  
+  
+  .menu-active
+    transform: translatex(0)
+
+  .navbar__item--logo
+    margin-left: 20px

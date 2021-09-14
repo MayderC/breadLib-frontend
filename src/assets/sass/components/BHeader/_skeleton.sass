@@ -1,0 +1,31 @@
+//Photo by <a href="https://unsplash.com/@aleskrivec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ales Krivec</a> on <a href="https://unsplash.com/s/photos/bread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+@import '../../variables'
+
+.header
+  height: calc( 100vh - 300px )
+  min-height: calc( 100vh - 80px )
+  width: 100%
+  box-sizing: border-box
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-wrap: wrap
+  position: relative
+  z-index: -2
+
+.header__item 
+  width: 50%
+  min-width: 300px
+.header--info
+  padding: 50px
+  max-width: 100%
+
+.credits
+  position: absolute
+  bottom: 20px
+  right: 20px
+  
+@media (max-width: $movil-large)
+  .header
+    min-height: calc( 100vh - 160px )
+  
