@@ -10,10 +10,10 @@
       p {{bread.description}}
     .card__detail
       p
-        span Unidades X bolsa:
+        span Unidades:
         |   4
       p
-        span Precio de bolsa: 
+        span Precio: 
         |   {{bread.price}}
 
 </template>
@@ -37,14 +37,16 @@ export default {
 .card
   box-sizing: border-box
   background: #FFF8E9
+  background: #fff
   min-width: 230px
   width: 230px
   //padding: 10px
   display: grid
   place-items: center
-  border-radius: 10px
-  box-shadow: 10px 10px 20px rgba(0 0 0 / 40%)
+  border-radius: 3px
+  box-shadow: 25px 25px 30px rgba(0 0 0 / 50%)
   transition: .3s
+  overflow: hidden
   z-index: -1
 
 .card__body h3 
@@ -52,8 +54,7 @@ export default {
 
 .card__body
   max-width: 210px
-  height: 160px
-  padding: 0 10px
+
 
 .card__body p span
   color: #D87022
@@ -81,7 +82,7 @@ export default {
 .card__detail  p
   //padding: 10px 0
   white-space: nowrap
-  text-shadow: 5px 5px 10px #d87022
+  //text-shadow: 5px 5px 10px #d87022
   display: flex
   justify-content: space-between
 
@@ -100,16 +101,15 @@ export default {
   
   
 .card__body .card__title h3
-  text-align: center
-  text-shadow: 5px 5px 10px #d87022
+  text-align: left
+  //text-shadow: 5px 5px 10px #d87022
 
 .card__img > img
   //width: 200px
   width: 230px
   height: 150px
   object-fit: cover
-  border-top-right-radius: 10px
-  border-top-left-radius: 10px
+
   //box-shadow: 10px 10px 30px #e8d6ba, -10px -10px 30px #e8d6ba
 
 </style>

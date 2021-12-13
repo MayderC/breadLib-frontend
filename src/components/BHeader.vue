@@ -2,18 +2,25 @@
   
 header.header
   .header__item.header--info
-    h2 Bread Liberia
+    h2 Bread Liberia {{miU}}
 
-  .header__item.header--img
-  p.credits Photo by <a href="https://unsplash.com/@aleskrivec?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Ales Krivec</a> on <a href="https://unsplash.com/s/photos/bread?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
-  
+  .header__item.header--sing
+    b-login-card
 
 </template>
 
 
 <script>
+//Simport { mapState } from 'vuex'
+import BLoginCard from './BLoginCard.vue'
 export default {
-  name: 'BHeader'
+  name: 'BHeader',
+  components:{
+    BLoginCard
+  },
+  computed: {
+    
+  }
 }
 </script>
 
